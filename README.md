@@ -48,10 +48,6 @@ Now that Snyk is connected to your GitHub Account, import the Repo into Snyk as 
 * Click on the Repo you forked
 * Once done (about 3 minutes) you should see something similar to this
 
-![alt tag](https://i.ibb.co/RTbjBd6/GH-workshop-2.png)
-
-
-
 
 ## Congratulations - Workshop Completed!!!
 
