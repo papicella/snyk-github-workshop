@@ -9,7 +9,7 @@ The following workshop is designed to show how Snyk integrates into SCM systems 
 
 ## What we will do in this hands-on workshop?
 
-TODO:// Pas
+TODO:// Pas to link headings
 
 # Workshop Steps
 
@@ -51,12 +51,13 @@ Now that Snyk is connected to your GitHub Account, import the Repo into Snyk as 
 
 ![](images/GH-workshop-4.png)
 
-
 ## Congratulations - Workshop Completed!!!
 
 Thanks for attending and completing this workshop
 
 ![alt tag](https://i.ibb.co/qJFDfWP/snyk-thumb.jpg)
+
+
 
 <hr />
 Shilpa Raghunathan [shilpa.raghunathan at snyk.io] is a Staff Partner Solutions Engineer APJ at Snyk
