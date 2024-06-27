@@ -51,11 +51,18 @@ Now that Snyk is connected to your GitHub Account, import the Repo into Snyk as 
 * Click on the Repo you forked
 * Once done (about 3 minutes) you should see something similar to this on the main projects page
 
-TODO:// Pas add viewing some of issues here
-
-## Step 4 Create a Pull Request 
-
 ![](images/GH-workshop-4.png)
+
+* Let's go ahead and click on package.json 
+* Here you will see all vulnerabilities including a dependency tree of where the vulnerabilities exist
+
+![](images/GH-workshop-6.png)
+
+![](images/GH-workshop-7.png)
+
+## Step 4 Create a Pull Request
+
+TODO:// Pas
 
 ## Step 5 - Create a GitHub Action adding Snyk SCA and SAST scan
 
@@ -74,8 +81,6 @@ TODO:// Shilpa (I think I want to remove this to be honest)
 Thanks for attending and completing this workshop
 
 ![alt tag](https://i.ibb.co/qJFDfWP/snyk-thumb.jpg)
-
-
 
 <hr />
 Shilpa Raghunathan [shilpa.raghunathan at snyk.io] is a Staff Partner Solutions Engineer APJ at Snyk
