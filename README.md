@@ -5,7 +5,7 @@ The following workshop is designed to show how Snyk integrates into SCM systems 
 ## Prerequisites
 
 * public GitHub account - http://github.com
-* snyk CLI - https://support.snyk.io/hc/en-us/articles/360003812538-Install-the-Snyk-CLI
+* Snyk Account  - http://app.snyk.io (Sign Up for Free Account)
 
 ## What we will do in this hands-on workshop?
 
@@ -83,5 +83,5 @@ Thanks for attending and completing this workshop
 ![alt tag](https://i.ibb.co/qJFDfWP/snyk-thumb.jpg)
 
 <hr />
-Shilpa Raghunathan [shilpa.raghunathan at snyk.io] is a Staff Partner Solutions Engineer APJ at Snyk
+Shilpa Raghunathan [shilpa.raghunathan at snyk.io] is a Staff Partner Solutions Engineer APJ at Snyk <br />
 Pas Apicella [pas at snyk.io] is a Principal Solution Engineer APJ at Snyk
