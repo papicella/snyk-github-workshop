@@ -9,7 +9,10 @@ The following workshop is designed to show how Snyk integrates into SCM systems 
 
 ## What we will do in this hands-on workshop?
 
-TODO:// Pas to link headings
+TODO:// Pas
+
+* [Step 1 - Fork our sample repo into your own GitHub account](#step-1---fork-our-sample-repo-into-your-own-github-account)
+* TODO://
 
 # Workshop Steps
 
