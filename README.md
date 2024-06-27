@@ -42,6 +42,8 @@ Now let's enable Code scanning you do that as follows
 
 ![](images/GH-workshop-3.png)
 
+## Step 3 - Import TicTacToe Application
+
 Now that Snyk is connected to your GitHub Account, import the Repo into Snyk as a Project.
 
 * Navigate to Projects menu option
@@ -49,7 +51,23 @@ Now that Snyk is connected to your GitHub Account, import the Repo into Snyk as 
 * Click on the Repo you forked
 * Once done (about 3 minutes) you should see something similar to this on the main projects page
 
+TODO:// Pas add viewing some of issues here
+
+## Step 4 Create a Pull Request 
+
 ![](images/GH-workshop-4.png)
+
+## Step 5 - Create a GitHub Action adding Snyk SCA and SAST scan
+
+TODO:// Shilpa
+
+## Step 6 - Create a Pull Request to trigger a PR check 
+
+TODO:// Shilpa
+
+## Step 7 - Secrets scanning 
+
+TODO:// Shilpa (I think I want to remove this to be honest)
 
 ## Congratulations - Workshop Completed!!!
 
