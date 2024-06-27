@@ -60,21 +60,17 @@ Now that Snyk is connected to your GitHub Account, import the Repo into Snyk as 
 
 ![](images/GH-workshop-7.png)
 
-## Step 4 Create a Pull Request
-
-TODO:// Pas
-
-## Step 5 - Create a GitHub Action adding Snyk SCA and SAST scan
+## Step 4 - Create a GitHub Action adding Snyk SCA and SAST scan
 
 TODO:// Shilpa
 
-## Step 6 - Create a Pull Request to trigger a PR check 
+## Step 5 - Create a Pull Request to trigger a PR check 
 
 TODO:// Shilpa
 
-## Step 7 - Secrets scanning 
+## Step 6 - Secrets scanning 
 
-TODO:// Shilpa (I think I want to remove this to be honest)
+TODO:// Shilpa
 
 ## Congratulations - Workshop Completed!!!
 
