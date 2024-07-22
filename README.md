@@ -149,6 +149,8 @@ _You can skip this if you followed the guided flow in the previous step._
 
 Thanks for attending and completing the live portion of this workshop. :) 
 
+![](images/snyk-logo.png)
+
 ## Offline Tasks
 
 Now that you have an idea of how Snyk works, and you have the basic setup completed, you can continue learning about Snyk on your own by trying out the following:
