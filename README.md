@@ -17,7 +17,7 @@ We will cover the following topics, some live during today's session, and we'll 
   
 - [ ] Setting up the SCM integration between GitHub and Snyk
 - [ ] Importing a repo into Snyk and scanning in via the SCM integration
-- [ ] Running Snyk checks when a PR is opened
+- [ ] Opening a PR to fix a Snyk Open Source vulnerability
 - [ ] Running Snyk in the IDE to detect and fix vulnerabilities
     
 </details>
@@ -27,6 +27,7 @@ We will cover the following topics, some live during today's session, and we'll 
   
 - [ ] Detecting and suggesting fixes for transitive dependencies
 - [ ] Prioritization using Risk scores
+- [ ] [_Enterprise-only_] Fix Code issues in the IDE using DeepCode AI Fix
 - [ ] [_Enterprise-only_] Using `Reachability` as an additional parameter to determine risk
 - [ ] [_Enterprise-only_] Reporting to provide visibility and facilitate collaboration between Security and Dev teams
 - [ ] [_Enterprise-only_] Creating an inventory of code-based assets and setting up policies for security coverage
