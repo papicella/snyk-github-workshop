@@ -173,11 +173,7 @@ Now that you have an idea of how Snyk works, and you have the basic setup comple
 
 ## Resources
 
-- 
-
-<p align="center">
-  <img src="https://i.ibb.co/qJFDfWP/snyk-thumb.jpg">
-</p>
+-
 
 <hr />
 
