@@ -99,6 +99,8 @@ _You can skip this if you followed the guided flow in the previous step._
 * Click on the repo you forked
 * Once done (about 3 minutes), you should see something similar to this on the main projects page
 
+![](images/GH-workshop-4-2.png)
+
 ![](images/GH-workshop-4.png)
 
 * Let's go ahead and click on pom.xml
