@@ -18,6 +18,7 @@ We will cover the following topics, some live during today's session, and we'll 
 - [ ] Setting up the SCM integration between GitHub and Snyk
 - [ ] Importing a repo into Snyk and scanning in via the SCM integration
 - [ ] Opening a PR to fix a Snyk Open Source vulnerability
+- [ ] (TBD) Running Snyk in Codespaces to check out the IDE experience 
     
 </details>
 
@@ -40,7 +41,7 @@ We will cover the following topics, some live during today's session, and we'll 
 - [ ] Running Snyk in the IDE to detect and fix vulnerabilities  
 - [ ] Set up the Snyk CLI
 - [ ] Include Snyk scans in your CI/CD pipelines
-- [ ] Integrate 3rd party tools like GitLeaks and TruffleHog using GitHub Actions to detect secrets
+- [ ] Integrate 3rd party tools like Nightfall AI (TBH), GitLeaks, and TruffleHog using GitHub Actions to detect secrets
     
 </details>
 
@@ -72,6 +73,9 @@ _NOTE: You may have already setup the GitHub integration on Snyk; in that case, 
 * Sign up if you haven't already using your existing Google / GitHub / Bitbucket / Azure AD / Docker account
 * Use the guided flow to set up the GitHub integration and grant Snyk access to all your public repos
 * In Step 3 of the guided flow, you can select and import only the forked repo into Snyk 
+
+![](images/GH-workshop-8.png)
+
 * If you skipped the guided flow, navigate to Integrations -> Source Control -> GitHub
 
 ![](images/GH-workshop-5.png)
@@ -79,15 +83,18 @@ _NOTE: You may have already setup the GitHub integration on Snyk; in that case, 
 * Fill in your account credentials to connect your GitHub Account (if prompted).
 * Now let's enable Code Scanning - you do that as follows:
   * Select Settings -> Snyk Code -> set "Enable Snyk Code" -> Save Changes
+
+![](images/GH-workshop-3.png)
+
 * Similarly, let's enable IaC Scanning - you do that as follows:
   * Select Settings -> Snyk IaC -> Enable "Detect Configuration files" -> Save Changes
 
-![](images/GH-workshop-3.png)
+![](images/GH-workshop-9.png)
 
 </details> 
 
 <details>
-<summary>Step 3 - Import JavaCoffeeShop Application</summary>
+<summary>Step 2a - Import JavaCoffeeShop Application</summary>
 
 #### Optional
 
@@ -97,14 +104,21 @@ _You can skip this if you followed the guided flow in the previous step._
 * Navigate to Projects menu option
 * Click "**Add Project**" then select "**GitHub**"
 * Click on the repo you forked
-* Once done (about 3 minutes), you should see something similar to this on the main projects page
+* The import should take about 3 minutes or so
 
 ![](images/GH-workshop-4-2.png)
+
+</details>
+
+<details>
+<summary>Step 3 - Review SCM Integration Scan Results</summary>
+
+* Once the import has completed, when you navigate to your Projects tab (from the sidebar), you should see something like this:
 
 ![](images/GH-workshop-4.png)
 
 * Let's go ahead and click on pom.xml
-* Here you will see all vulnerabilities including a dependency tree of where the vulnerabilities exist
+* Here you will see all vulnerabilities including a dependency tree of where the vulnerabilities exist, with transitive dependencies also listed 
 
 ![](images/GH-workshop-6.png)
 
@@ -115,14 +129,24 @@ _You can skip this if you followed the guided flow in the previous step._
 <details>
 <summary>Step 4 - Create a Pull Request to trigger a PR check</summary>
 
-#### Switch to your forked GitHub repo
+#### Navigate back to the list of Issues in the pom.xml
 
-* Create a new branch called `username`-snyk-test
-* From the new branch, hit the `.` button to open up the GitHub Web Editor
-* Modify the `pom.xml` and change the version of dependency X to Y
-* Click on the Source Control extension and commit your changes and open a pull request to merge your changes to `main`
-* Close the web editor and return to your repository, and open the PR you just created
-* Scroll to the bottom and you will see the `code/snyk`, `security/snyk`, and `license/snyk` checks running - congratulations, your SCM integration is working as expected! 
+* Let's select an issue with a fix available (you should see a green button saying 'Fix this vulnerability')
+
+![](images/GH-workshop-10.png)
+  
+* Click on the **Fix this vulnerability** button, and select the option to open a new PR on the next page (you'll need to scroll to the bottom of the page)
+
+![](images/GH-workshop-11.png)
+
+* This should take you to a new pull request that has been created in the JavaCoffeeShop repo
+
+![](images/GH-workshop-12.png)
+
+* Scroll to the bottom and you will see the `code/snyk`, `security/snyk`, and `license/snyk` checks running - congratulations, your SCM integration is working as expected!
+
+![](images/GH-workshop-13.png)
+
 * Once the tests complete running, you can click on the "**Details**" button next to them to view the scan report in the Snyk UI  
 
 </details>
