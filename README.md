@@ -154,13 +154,25 @@ _You can skip this if you followed the guided flow in the previous step._
 <details>
 <summary>Step 5 - Find and fix issues in the IDE</summary> 
 
-#### Switch to Visual Studio Code now 
+#### Switch to the Code section of your repository now 
 
-* Open the Command Palette in VS Code (Cmd + Shift + P on Mac) and type `Git: Clone`
-* Click on "**Clone from GitHub**" and select the forked **JavaCoffeeShop** repo from the list of options (or search for it, if you don't see it)
-* Click on the Snyk extension in the Extension Bar and click "**Connect VS Code with Snyk**"
-* The scans should start running automatically, but if they don't, save your project or click the "**Rescan**" button in the Snyk extension panel
-  * The first time you run the scans, they might take longer, because Snyk will need to download and set up the CLI in the background
+* We are going to use Codespaces for this section of the workshop. Click on the green '**Code**' button and then '**Create codespace on main**"
+
+![](images/GH-workshop-14.png)
+
+* It will take anywhere between 2-5 minutes for the codespace to spin up and be fully set up. When you see the Snyk logo on the Extensions bar on the left, and status messages popping up on the right side of your screen, it is ready. 
+
+![](images/GH-workshop-14.png)
+
+* While waiting, switch to your Snyk dashboard, first click on your name in the bottom left of the sidebar, and then '**Account Settings**'
+* Under '**General Settings**' you should see a field under '**API Token**' - create your API key and copy it
+
+![](images/GH-workshop-19.png)
+
+* If your Codespace is now ready, open the Command Palette (same as in VS Code - Cmd + Shift + P on Mac) and type `Snyk`
+* Click on "**Snyk: Set Token**" and paste the copied API key when prompted
+* You'll see the Snyk extension expand on the left if authentication is successful
+* Click the "**Rescan**" button in the Snyk extension panel to start them - moving forward, scans will run automatically whenever you save changes 
 * Under "**Open Source Security**," expand the results for your pom.xml and click on X
 * You should see the following:
   * An editor window opens up the pom.xml with the yellow lightbulb icon next to the line where the vulnerability appears
