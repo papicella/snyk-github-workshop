@@ -136,9 +136,6 @@ _You can skip this if you followed the guided flow in the previous step._
 ![](images/GH-workshop-10.png)
   
 * Click on the **Fix this vulnerability** button, and select the option to open a new PR on the next page (you'll need to scroll to the bottom of the page)
-
-![](images/GH-workshop-11.png)
-
 * This should take you to a new pull request that has been created in the JavaCoffeeShop repo
 
 ![](images/GH-workshop-12.png)
