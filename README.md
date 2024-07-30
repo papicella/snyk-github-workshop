@@ -162,7 +162,7 @@ _You can skip this if you followed the guided flow in the previous step._
 
 * It will take anywhere between 2-5 minutes for the codespace to spin up and be fully set up. When you see the Snyk logo on the Extensions bar on the left, and status messages popping up on the right side of your screen, it is ready. 
 
-![](images/GH-workshop-14.png)
+![](images/GH-workshop-15.png)
 
 * While waiting, switch to your Snyk dashboard, first click on your name in the bottom left of the sidebar, and then '**Account Settings**'
 * Under '**General Settings**' you should see a field under '**API Token**' - create your API key and copy it
@@ -171,8 +171,17 @@ _You can skip this if you followed the guided flow in the previous step._
 
 * If your Codespace is now ready, open the Command Palette (same as in VS Code - Cmd + Shift + P on Mac) and type `Snyk`
 * Click on "**Snyk: Set Token**" and paste the copied API key when prompted
+
+![](images/GH-workshop-16.png)
+
 * You'll see the Snyk extension expand on the left if authentication is successful
-* Click the "**Rescan**" button in the Snyk extension panel to start them - moving forward, scans will run automatically whenever you save changes 
+
+![](images/GH-workshop-17.png)
+
+* Click the "**Rescan**" button in the Snyk extension panel to start them - moving forward, scans will run automatically whenever you save changes. If you see the extension panel refresh and populate with results like in the image below, congratultions, you have set Snyk up in the IDE successfully!
+
+![](images/GH-workshop-18.png)
+
 * Under "**Open Source Security**," expand the results for your pom.xml and click on X
 * You should see the following:
   * An editor window opens up the pom.xml with the yellow lightbulb icon next to the line where the vulnerability appears
