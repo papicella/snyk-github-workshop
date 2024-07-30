@@ -177,7 +177,7 @@ _You can skip this if you followed the guided flow in the previous step._
 
 * Click the "**Rescan**" button in the Snyk extension panel to start them - moving forward, scans will run automatically whenever you save changes. If you see the extension panel refresh and populate with results like in the image below, congratultions, you have set Snyk up in the IDE successfully!
 
-![](images/GH-workshop-18.png)
+![](images/GH-workshop-18_new.png)
 
 * Under "**Open Source Security**," expand the results for your pom.xml and click on X
 * You should see the following:
