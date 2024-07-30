@@ -6,7 +6,6 @@ The following workshop is designed to show how Snyk integrates into SCM systems 
 
 * Free GitHub account - https://www.github.com
 * Free Snyk account  - https://app.snyk.io 
-* [Visual Studio Code](https://code.visualstudio.com/download) connected to your GitHub account, and with the [Snyk Extension installed](https://github.com/snyk/vscode-extension?tab=readme-ov-file#install-the-extension)
 
 ## Agenda
 
