@@ -17,7 +17,7 @@ We will cover the following topics, some live during today's session, and we'll 
 - [ ] Setting up the SCM integration between GitHub and Snyk
 - [ ] Importing a repo into Snyk and scanning in via the SCM integration
 - [ ] Opening a PR to fix a Snyk Open Source vulnerability
-- [ ] (TBD) Running Snyk in Codespaces to check out the IDE experience 
+- [ ] Running Snyk in Codespaces to check out the IDE experience 
     
 </details>
 
@@ -192,19 +192,39 @@ Now that you have an idea of how Snyk works, and you have the basic setup comple
 
 <details>
   <summary>Setting up the Snyk CLI</summary>
+
+  #### This will help you set up Snyk on your local machine 
+
+  * 
 </details>
 
 <details>
   <summary>Including Snyk scans in your pipelines using GitHub Actions</summary>
+
+  #### You can run all Snyk scans in your pipelines by first installing the CLI on your runner, and then running the same commands you previously used while using the CLI locally in the previous step
+  
+  * 
 </details>
 
 <details>
   <summary>Integrating 3rd party tools with GitHub Actions to detect secrets</summary>
   <details>
+    <summary>Nightfall AI</summary>
+
+    *
+    
+  </details>
+  <details>
     <summary>GitLeaks</summary>
+
+    *
+    
   </details>
   <details>
     <summary>TruffleHog</summary>
+
+    *
+    
   </details>
 </details>
 
