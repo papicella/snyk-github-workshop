@@ -178,14 +178,6 @@ _You can skip this if you followed the guided flow in the previous step._
 
 ![](images/GH-workshop-18_new.png)
 
-* Under "**Open Source Security**," expand the results for your pom.xml and click on X
-* You should see the following:
-  * An editor window opens up the pom.xml with the yellow lightbulb icon next to the line where the vulnerability appears
-  * A new tab with details of the vulnerability appears to the right of your editor
-* Click on the yellow lightbulb icon, and a list of options appears
-* Select the first option under "**Quick Fix**" - "xyz"
-* Save your changes, and the scans should start running again automatically
-* When the Open Source scan completes, you should see that there are now only X vulnerabilities, where there previously were Y - congratulations, you have found and fixed vulnerabilities right from your IDE!    
 </details> 
 
 <h1 align="center">Congratulations - Workshop Completed!!!</h1>
