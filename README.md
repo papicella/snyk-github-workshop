@@ -131,6 +131,7 @@ _You can skip this if you followed the guided flow in the previous step._
 #### Navigate back to the list of Issues in the pom.xml
 
 * Let's select an issue with a fix available (you should see a green button saying 'Fix this vulnerability')
+* Search for "com.thoughtworks.xstream:xstream" and select the RCE vulnerability
 
 ![](images/GH-workshop-10.png)
   
