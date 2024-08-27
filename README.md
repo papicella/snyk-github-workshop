@@ -37,7 +37,6 @@ We will cover the following topics, some live during today's session, and we'll 
 <details>
   <summary>Offline</summary>
 
-- [ ] Running Snyk in the IDE to detect and fix vulnerabilities  
 - [ ] Set up the Snyk CLI
 - [ ] Include Snyk scans in your CI/CD pipelines
 - [ ] Integrate 3rd party tools like Nightfall AI, GitLeaks, and TruffleHog using GitHub Actions to detect secrets
@@ -192,6 +191,15 @@ Thanks for attending and completing the live portion of this workshop. :)
 Now that you have an idea of how Snyk works, and you have the basic setup completed, you can continue learning about Snyk on your own by trying out the following:
 
 <details>
+  <summary>Setting up Snyk in the IDE</summary>
+
+  #### This will help you set up Snyk in an IDE of your choice
+
+  * Instructions for installing the Snyk extension on your local IDE are available [here](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions)
+  * If you're using VS Code, the steps involved will be almost identical to what we did during the lab using Codespaces 
+</details>
+
+<details>
   <summary>Setting up the Snyk CLI</summary>
 
   #### This will help you set up Snyk on your local machine 
@@ -250,12 +258,9 @@ Now that you have an idea of how Snyk works, and you have the basic setup comple
 
   * Snyk Official Documentation: https://docs.snyk.io
   * Interactive Learning on Snyk Learn: https://learn.snyk.io/catalog/
-  * Installing the Snyk extension on your local IDE: https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions 
-    
--
 
 <hr />
 
-Pas Apicella [pas at snyk.io] is a Principal Solution Engineer APJ at Snyk
-Shilpa Raghunathan [shilpa.raghunathan at snyk.io] is a Staff Partner Solutions Engineer at Snyk 
+Pas Apicella [pas at snyk.io] is a Principal Solution Engineer APJ at Snyk <br />
+Shilpa Raghunathan [shilpa.raghunathan at snyk.io] is a Staff Partner Solutions Engineer at Snyk <br />
 Suganthi Krishnavathi [suganthi.krishnavathi at snyk.io] is a Staff Solutions Engineer at Snyk <br />
