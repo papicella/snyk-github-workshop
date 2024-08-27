@@ -37,7 +37,8 @@ We will cover the following topics, some live during today's session, and we'll 
 <details>
   <summary>Offline</summary>
 
-- [ ] Set up the Snyk CLI
+- [ ] Set up the Snyk Extension in the IDE
+- [ ] Set up the Snyk CLI locally
 - [ ] Include Snyk scans in your CI/CD pipelines
 - [ ] Integrate 3rd party tools like Nightfall AI, GitLeaks, and TruffleHog using GitHub Actions to detect secrets
     
