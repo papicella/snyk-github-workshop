@@ -40,7 +40,7 @@ We will cover the following topics, some live during today's session, and we'll 
 - [ ] Running Snyk in the IDE to detect and fix vulnerabilities  
 - [ ] Set up the Snyk CLI
 - [ ] Include Snyk scans in your CI/CD pipelines
-- [ ] Integrate 3rd party tools like Nightfall AI (TBH), GitLeaks, and TruffleHog using GitHub Actions to detect secrets
+- [ ] Integrate 3rd party tools like Nightfall AI, GitLeaks, and TruffleHog using GitHub Actions to detect secrets
     
 </details>
 
@@ -157,7 +157,7 @@ _You can skip this if you followed the guided flow in the previous step._
 
 ![](images/GH-workshop-14.png)
 
-* It will take anywhere between 2-5 minutes for the codespace to spin up and be fully set up. When you see the Snyk logo on the Extensions bar on the left, and status messages popping up on the right side of your screen, it is ready. 
+* It will take anywhere between 2-5 minutes for the codespace to spin up and be fully set up. When you see the Snyk logo on the Extensions bar on the left, and status messages popping up on the right side of your screen, it is ready. You will be asked to grant **Workspace Trust**, click on OK. 
 
 ![](images/GH-workshop-15.png)
 
@@ -166,7 +166,7 @@ _You can skip this if you followed the guided flow in the previous step._
 
 ![](images/GH-workshop-19.png)
 
-* If your Codespace is now ready, open the Command Palette (same as in VS Code - Cmd + Shift + P on Mac) and type `Snyk`
+* If your Codespace is now ready, open the Command Palette (same as in VS Code - Cmd + Shift + P on Mac; Ctrl + Shift + P on Windows) and type `Snyk`
 * Click on "**Snyk: Set Token**" and paste the copied API key when prompted
 
 ![](images/GH-workshop-16.png)
@@ -175,7 +175,7 @@ _You can skip this if you followed the guided flow in the previous step._
 
 ![](images/GH-workshop-17.png)
 
-* Click the "**Rescan**" button in the Snyk extension panel to start them - moving forward, scans will run automatically whenever you save changes. If you see the extension panel refresh and populate with results like in the image below, congratultions, you have set Snyk up in the IDE successfully!
+* Click the "**Rescan**" button in the Snyk extension panel to start the scans - moving forward, scans will run automatically whenever you save changes. If you see the extension panel refresh and populate with results like in the image below, congratultions, you have set Snyk up in the IDE successfully!
 
 ![](images/GH-workshop-18_new.png)
 
@@ -196,7 +196,7 @@ Now that you have an idea of how Snyk works, and you have the basic setup comple
 
   #### This will help you set up Snyk on your local machine 
 
-  * 
+  * Follow the intructions [here](https://docs.snyk.io/snyk-cli/getting-started-with-the-snyk-cli#install-the-snyk-cli-and-authenticate-your-machine) to install the Snyk CLI on your machine, complete authentication, and run scans locally using the commands provided in the documentation 
 </details>
 
 <details>
@@ -204,7 +204,12 @@ Now that you have an idea of how Snyk works, and you have the basic setup comple
 
   #### You can run all Snyk scans in your pipelines by first installing the CLI on your runner, and then running the same commands you previously used while using the CLI locally in the previous step
   
-  * 
+  * The repo you forked earlier has GitHub Actions workflows set up to run [Snyk Open Source](https://github.com/boosef-snyk/JavaCoffeeShop/blob/main/.github/workflows/snyk-os.yml) and [Snyk Code](https://github.com/boosef-snyk/JavaCoffeeShop/blob/main/.github/workflows/snyk-code.yml) scans as a part of your CI/CD pipelines.
+    * By default, GitHub disables the GitHub Action workflows in forked repositories. To enable GitHub Actions in the repo, click the Actions tab of your forked repository and click "I understand my workflows, go ahead and enable them."
+   
+    ![image](https://github.com/user-attachments/assets/045b732b-0bcb-4840-bd31-210a90c5fa45)
+  * If you use a different CI/CD tool, please refer to some of the sample files we have [here](https://github.com/snyk-labs/snyk-cicd-integration-examples/) 
+  
 </details>
 
 <details>
@@ -212,28 +217,45 @@ Now that you have an idea of how Snyk works, and you have the basic setup comple
   <details>
     <summary>Nightfall AI</summary>
 
-    *
+  #### Setting up a Nightfall AI account and integrating Secret Scanning in your pipelines
+  
+  * Sign up for a free Nightfall API account to get your API key [here](https://nightfall.ai/api)
+  * The forked repo has Nightfall AI scans set up using GitHub Actions (yml [here](https://github.com/boosef-snyk/JavaCoffeeShop/blob/main/.github/workflows/nightfalldlp.yml)) - you can add commits / open PRs committing secrets to the main branch to test it out 
+  * If you'd like to create your own policies / workflows, detailed setup instructions are available [here](https://github.com/nightfallai/nightfall_dlp_action?tab=readme-ov-file)
     
   </details>
   <details>
     <summary>GitLeaks</summary>
 
-    *
+  #### Setting up GitLeaks and integrating Secret Scanning in your pipelines
+
+  * Gitleaks is an open source project and you can set up scans without creating an account
+  * The forked repo has Gitleaks scans set up using GitHub Actions (yml [here](https://github.com/boosef-snyk/JavaCoffeeShop/blob/main/.github/workflows/gitleaks.yml)) - you can add commits / open PRs committing secrets to the main branch to test it out 
+  * If you'd like to create your own configuration, set up pre-commit hooks etc. detailed instructions are available [here](https://github.com/gitleaks/gitleaks)
     
   </details>
   <details>
     <summary>TruffleHog</summary>
 
-    *
+  #### Setting up a TruffleHog account and integrating Secret Scanning in your pipelines
+ 
+  * TruffleHog is an open source project and you can set up scans without creating an account; there is also an Enterprise offering 
+  * The forked repo has TruffleHog scans set up using GitHub Actions (yml [here](https://github.com/boosef-snyk/JavaCoffeeShop/blob/main/.github/workflows/trufflehog.yml)) - you can add commits / open PRs committing secrets to the main branch to test it out 
+  * If you'd like to create your own configuration, set up secret scanning for other assets like S3 buckets, Docker Images, Elasticsearch clusters etc. detailed instructions are available [here](https://github.com/trufflesecurity/trufflehog)
     
   </details>
 </details>
 
-## Resources
+## Additional Resources
 
+  * Snyk Official Documentation: https://docs.snyk.io
+  * Interactive Learning on Snyk Learn: https://learn.snyk.io/catalog/
+  * Installing the Snyk extension on your local IDE: https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions 
+    
 -
 
 <hr />
 
-Shilpa Raghunathan [shilpa.raghunathan at snyk.io] is a Staff Partner Solutions Engineer at Snyk <br />
 Pas Apicella [pas at snyk.io] is a Principal Solution Engineer APJ at Snyk
+Shilpa Raghunathan [shilpa.raghunathan at snyk.io] is a Staff Partner Solutions Engineer at Snyk 
+Suganthi Krishnavathi [suganthi.krishnavathi at snyk.io] is a Staff Solutions Engineer at Snyk <br />
