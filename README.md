@@ -167,9 +167,19 @@ _You can skip this if you followed the guided flow in the previous step._
 ![](images/GH-workshop-19.png)
 
 * If your Codespace is now ready, open the Command Palette (same as in VS Code - Cmd + Shift + P on Mac; Ctrl + Shift + P on Windows) and type `Snyk`
+
 * Click on "**Snyk: Set Token**" and paste the copied API key when prompted
 
 ![](images/GH-workshop-16.png)
+
+* Make sure you click "Trust folders and continue" when prompted in the bottom RHS
+
+![](images/GH-workshop-20.png)
+
+* Make sure in the Snyk extension settings (click on![](images/settings.png)) that the Authentication method is "Token authentication"
+
+![](images/GH-workshop-21.png)
+
 
 * You'll see the Snyk extension expand on the left if authentication is successful
 
